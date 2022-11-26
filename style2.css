@@ -1,21 +1,21 @@
-*
+/* *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: monospace;
-}
-section {
+} */
+/* section {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     transform-style: preserve-3d;  
-}
+} */
 .earth {
     z-index: 0;
     position: absolute;
-    top: 84%;
+    top: 98%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 1000px;
