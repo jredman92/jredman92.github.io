@@ -1,12 +1,99 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transform-style: preserve-3d;  
+}
+.earth {
+    z-index: 0;
+    position: absolute;
+    top: 84%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 1000px;
+    background: white;
+    background-image: url(otherimgs/earth1.png);
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: repeat-x;
+    box-shadow: inset 0 0 20px rgb(0 0 0), 0 0 50px #4069ff;
+    animation: animateEarth 30s linear infinite;
+    transition: transform 2000ms linear;
+}
+@keyframes animateEarth {
+0% {
+  background-position: 0 0;
+}
+100% {
+  background-position: 1002px 0;
+  }
+}
+.circle {
+    z-index: 2;
+    transform-style: preserve-3d;
+    /* spin speed */
+    animation: animateText 20s linear infinite;
+
+}
+.circle span {
+    font-family: 'Secular One', sans-serif;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    color: #35146f;
+    font-size: 3em;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    padding: 10px 57px;
+    transform: rotateY(calc(var(--i) * calc(360deg / 33))) 
+    translateZ(600px);
+    border-top: 4px solid #35146f;
+    border-bottom: solid #35146f;
+}
+.circle span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    transform: translateZ(-5px);
+}
+@keyframes animateText 
+{
+    0%
+    {
+        transform: perspective(1000px) rotateY(1000deg) 
+        rotateX(15deg) translateY(-30px);
+    }
+    100%
+    {
+        /* perspective = radius of ring */
+        transform: perspective(100px) rotateY(100deg) rotateX 
+        (15deg) translateY(-30px);
+    }
+}
+
 .animation {
     position: relative;
-    z-index: 500;
+    z-index: 1;
     left: 894px;
-    top: 399px;
-    width: 83.333333333px;
+    top: 438px;
+    width: 78.333333333px;
     height: 126px;
     background-image: url(https://38.media.tumblr.com/tumblr_mb4zsyUYCT1rvuv0d.png);
-    margin: 0;
     animation: walk-cycle 1.0s steps(6) infinite;
 }
 
@@ -19,32 +106,9 @@
     }   
 }
 
-.earth{
-    position: relative;
-    z-index: 0;
-    top: 378px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0.05em auto;
-    width: 1200px;
-    height: 1200px;
-    background-image: url(globe.jpg);
-    border-radius: 50%;
-    background-size: cover;
-    box-shadow: 80px -50px 80px 20px #000 inset, 0 0 20px 2px #000;
-    animation: rotate 60s linear infinite;
-    transition: transform 200ms linear;
-}
 
-@keyframes rotate {
-0% {
-  background-position: 0 0;
-}
-100% {
-  background-position: 630px 0;
-  }
-}
+
+
 
 .bg-text {
     background-color: rgb(0,0,0);
@@ -64,9 +128,19 @@
     text-align: center;
 }
 
-/* Bus tracker title  */
+/* Bus tracker title - Page 2  */
 
 h1 {
+    text-align: right;
+    color: white;
+    font-family: 'Rubik Glitch', cursive;
+    font-size: 6em;
+    position: absolute;
+    top: 141px;
+    right: 75px;
+}
+
+h2 {
     text-align: center;
     color: white;
     -webkit-text-stroke: 1px #23430C;
@@ -74,7 +148,6 @@ h1 {
     display: block;
     font-family: monospace;
     font-size: 5em;
-    color: #ffffff;
     margin-top: -2728px;
     margin-left: 43px;
     font-weight: bold;
@@ -82,24 +155,31 @@ h1 {
 
 /* About - Page 3  */
 
-h2 {
-    text-transform: uppercase;
+h3 {
     text-align: center;
-    margin-top: 150;
-
-    font-size: 5em;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
+    -webkit-text-stroke: 1px #23430C;
+    text-shadow: -7px 5px 7px #23430c, 0px 0px 0px #23430c, 0px 0px 0 #23430c, 0px 0px 0 #23430c;
+    display: block;
+    font-family: monospace;
+    font-size: 5em;
+    margin-top: 172px;
+    margin-left: 43px;
+    font-weight: bold;
 }
 
 p.text3 {
-    text-indent: 100px;
-    font-family: 'Patrick Hand', cursive;
-    text-transform: uppercase;
     text-align: justify;
-    font-size: 1.9em;
-    margin: 7% 9% 4% 32%;
     color: white;
+    -webkit-text-stroke: 1px #23430C;
+    text-shadow: -7px 5px 7px #23430c, 0px 0px 0px #23430c, 0px 0px 0 #23430c, 0px 0px 0 #23430c;
+    display: block;
+    font-family: monospace;
+    font-size: 30px;
+    margin-top: 91px;
+    margin-left: 740px;
+    margin-right: 106px;
+    font-weight: bold;
 }
 
 /* Image - Page 3  */
@@ -123,10 +203,11 @@ p.text3 {
     left: 50%;
     top: 52%;
     transform: translate(-50%, -50%);
-    width: 865px;
-    height: 500px;
-    background: #818181;
-    border-radius: 50% 10% / 10% 50%;
+    width: 837px;
+    height: 104px;
+    background: #eeacff;
+    border-radius: 0% 0%;
+    box-shadow: 2px 2px 20px 6px rgb(51 255 245);
 }
 
 /* Text - Page 4 */
@@ -134,12 +215,12 @@ p.text3 {
 p.text4 {
     position: relative;
     text-indent: 30px;
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     font-size: 25px;
-    margin: -4% 29% 0% 29%;
-    color: white;
-    box-shadow: 1px 3px 9px 3px;
+    margin: 17% 28% 0% 28%;
+    color: rgb(0, 0, 0);
+    box-shadow: 2px 3px 9px 3px rgb(255 255 255);
 }
 
 /* Slide labels  */
@@ -152,7 +233,7 @@ h5 {
 
 
 
-#hi {
+/* #hi {
     position: absolute;
     z-index: 0;
     top: 168px;
@@ -161,9 +242,9 @@ h5 {
     right: 0;
     width: 353px;
     height: 324px;
-}
+} */
 
-#jaymie {
+/* #jaymie {
     position: absolute;
     z-index: 0;
     top: 150px;
@@ -172,7 +253,7 @@ h5 {
     right: 0;
     width: 715px;
     height: 323px;
-}
+} */
 
 
 
@@ -186,10 +267,8 @@ h5 {
 
 body {
     background-image: url("space.png");
-    z-index: 10;
     margin: 0;
     padding: 0;
-    font-family: Arial;
     min-height: 100%;
     /* overflow: hidden; */
     background-repeat: no-repeat;
@@ -212,18 +291,10 @@ nav {
     /* box-sizing: border-box;
     background: rgba(0,0,0,0.6); */
 }
-nav .logo {
-    padding: 22px 20px;
-    height: 80px;
-    float: left;
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
-}
+
 nav ul {
     list-style: none;
-    float: right;
+    float: left;
     margin: 0;
     padding: 0;
     display: flex;
@@ -238,7 +309,7 @@ nav ul li a {
     text-transform: uppercase;
 }
 nav ul li a:hover {
-    background: rgba(0,0,0,0.7);
+    background: rgba(226, 226, 226, 0.7);
     border-radius: 6px;
 }
 
