@@ -404,13 +404,15 @@ nav ul li a:hover {
 /* Eye Exercise - Page 2 */
 
 .eyes {
+    z-index: 2;
     position: absolute;
-    top: 50%;
+    top: 27%;
     transform: translateY(-50%);
     width: 100%;
     text-align: center;
   }
   .eye {
+    z-index: 2;
     width: 240px;
     height: 120px;
     background: #fff;
@@ -429,6 +431,22 @@ nav ul li a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
+  }
+
+  .square {
+    position: relative;
+    z-index: 1;
+    left: 618px;
+    top: -400px;
+    transform: translate(-50%, -50%);
+    width: 1056px;
+    height: 774px;
+    background: #006f9b;
+    border-radius: 0% 0%;
+  }
+
+  .button {
+    margin-left: 50px;
   }
   
 
