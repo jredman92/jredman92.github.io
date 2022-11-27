@@ -7,108 +7,76 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="style2.css">
 
-<div id="map"></div>
 <!-- <div id="map-container"></div> -->
-<div id="bar-top"></div>
-<div id="bar-bottom"></div>
-<div id="bar-left"></div>
-<div id="bar-right"></div>
 
 </head>
-<body>
+<body class="p-3 m-0 border-0 bd-example">
 
-<nav>
-  <div class="logo">:)</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="2projects.html">Projects</a></li>
-      <li><a href="3about.html">About</a></li>
-      <li><a href="4contact.html">Contact </a></li>
-    </ul>
-</nav>
+    <!-- Example Code -->
+    
+    <!-- End Example Code -->
 
-<style>
-  .carousel-item {
-    height: 32rem;
-    background: #777;
-    color: white;
-    position: relative;
-  }
-  .container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-bottom: 50px;
-  } 
-</style>
-
-<div class="carousel-item active">
-  <div class="container">
-    <h1>Headline</h1>
-      <p>example text</p>
-
-  </div>
-</div>
- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
+    <!-- Example Code -->
+  
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-inner">
+        <div class="carousel-item">
+<div id="map"></div>   
+          <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title></title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em"></text></svg>
+          <div class="box"></div>
+
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title></title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em"></text></svg>
+                <div class="eyes">
+                    <div class="eye">
+                        <div class="ball"></div>
+                    </div>
+                    <div class="eye">
+                        <div class="ball"></div>
+                    </div>
+                </div>
+        </html>
+        </div>
         <div class="carousel-item active">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="900" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">#</text></svg>
-
-
-          <div id="bar-top"></div>
-          <div id="bar-bottom"></div>
-          <div id="bar-left"></div>
-          <div id="bar-right"></div>
-
-          <div class="carousel-caption d-none d-md-block">
-
-            <h5>First slide label</h5>
-            <p>#</p>
-          <div id="map"></div>
-          <div id="map-container"></div>
-
-          </div>
-        </div>
-        <div class="carousel-item">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text></svg>
+          <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title></title><rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em"></text></svg>
     
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text></svg>
-    
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>   
+    </div>
+    
+    <!-- End Example Code -->
+
+    <!-- <h1>Headline</h1>
+      <p>example text</p> -->
+
+
+  
 <!-- bottom icons -->
 
 <h2>MBTA BUS TRACKER</h2> 
   <!-- <div class="bg-text"></div> -->
 
-   
-    <script src="http://maps.google.com/maps/api/js?key=AIzaSyCkuIwALu-L4MjoP1MfF5jnF1ofjWqvtqs"></script>
+  <nav>
+    <div class="logo">:)</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="2projects.html">Projects</a></li>
+        <li><a href="3about.html">About</a></li>
+        <li><a href="4contact.html">Contact </a></li>
+      </ul>
+  </nav>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="mapanimation.js"></script>
-</body>
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyCkuIwALu-L4MjoP1MfF5jnF1ofjWqvtqs"></script>
+    <script src="mapanimation.js"></script> 
+  </body>
 </html>
