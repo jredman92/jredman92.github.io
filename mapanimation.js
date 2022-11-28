@@ -1,14 +1,14 @@
-var map;
-var markers = [];
+let map;
+let markers = [];
 
 // load map
 function init(){
-	var myOptions = {
+	let myOptions = {
 		zoom      : 14,
 		center    : { lat:42.353350,lng:-71.091525},
 		mapTypeId : google.maps.MapTypeId.ROADMAP
 	};
-	var element = document.getElementById('map');
+	let element = document.getElementById('map');
   	map = new google.maps.Map(element, myOptions);
   	addMarkers();
 }
@@ -16,11 +16,11 @@ function init(){
 // Add bus markers to map
 async function addMarkers(){
 	// get bus data
-	var locations = await getBusLocations();
+	let locations = await getBusLocations();
 
 	// loop through data, add bus markers
 	locations.forEach(function(bus){
-		var marker = getMarker(bus.id);		
+		let marker = getMarker(bus.id);		
 		if (marker){
 			moveMarker(marker,bus);
 		}
@@ -37,17 +37,17 @@ async function addMarkers(){
         
         // Request bus data from MBTA
         async function getBusLocations(){
-            var url = 'https://api-v3.mbta.com/vehicles?api_key=ca34f7b7ac8a445287cab52fb451030a&filter[route]=1&include=trip';	
-            var response = await fetch(url);
-            var json     = await response.json();
+            let url = 'https://api-v3.mbta.com/vehicles?api_key=ca34f7b7ac8a445287cab52fb451030a&filter[route]=1&include=trip';	
+            let response = await fetch(url);
+            let json     = await response.json();
             return json.data;
         }
         
         // run();
         
         function addMarker(bus){
-            var icon = getIcon(bus);
-            var marker = new google.maps.Marker({
+            let icon = getIcon(bus);
+            let marker = new google.maps.Marker({
                 position: {
                     lat: bus.attributes.latitude, 
                     lng: bus.attributes.longitude
@@ -69,7 +69,7 @@ async function addMarkers(){
         
         function moveMarker(marker,bus) {
             // change icon if bus has changed direction
-            var icon = getIcon(bus);
+            let icon = getIcon(bus);
             marker.setIcon(icon);
         
             // move icon to new lat/lon
@@ -80,7 +80,7 @@ async function addMarkers(){
         }
         
         function getMarker(id){
-            var marker = markers.find(function(item){
+            let marker = markers.find(function(item){
                 return item.id === id;
             });
             return marker;
@@ -107,3 +107,12 @@ async function getBusLocations(){
 run();
         
         window.onload = init;
+
+// Background move with mouse 
+
+const el = document.querySelector("#module");
+
+el.addEventListener("mousemove", (e) => {
+  el.style.backgroundPositionX = -e.offsetX + "px";
+  el.style.backgroundPositionY = -e.offsetY + "px";
+});

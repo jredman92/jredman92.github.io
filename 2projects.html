@@ -7,69 +7,44 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="style2.css">
 
-<!-- <div id="map-container"></div> -->
-
+<div class="module" id="module"></div> 
 </head>
-<body class="p-3 m-0 border-0 bd-example">
+<body class="projects">
 
-    <!-- Example Code -->
-    
-    <!-- End Example Code -->
+  <!-- Carousel  -->
 
-    <!-- Example Code -->
-          <div id='game'>
-            <button onclick='makeOne()' width='200' height='30'>Add PacMan</button>
-            <button onclick='update()' width='200' height='30'>Start Game</button>
-        </div>  
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item">
-          <div id="map"></div>   
-          <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title></title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em"></text></svg>
-          <div class="box"></div>
-        </div>
-        <div class="carousel-item">
-          <div class="eyes">
-              <div class="eye">
-                  <div class="ball"></div>
-              </div>
-              <div class="eye">
-                  <div class="ball"></div>
-              </div>
-          </div>
-        
-        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title></title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em"></text></svg>
-          <div class="square"></div>  
-        </div>
-        <div class="carousel-item active">
 
-          <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title></title><rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em"></text></svg>
-    
-        </div>
+  <div id="map"></div>
+
+    <h4>Real Time Bus Tracker</h4>
+    <p class="titleBus">Live bus tracking API's for the MBTA bus route.</p>
+
+  <div class="box"></div>
+
+  <div class="eyes">
+      <div class="eye">
+          <div class="ball"></div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+      <div class="eye">
+          <div class="ball"></div>
+      </div>
+  </div>
+
+    <h6>Eye Exercise</h6>
+    <p class="titleEye">Eyeballs follow cursor</p>
+ 
+  <div class="square"></div>  
+
+  <div id='game'>
+    <button onclick='makeOne()' width='200' height='30'>Add PacMan</button>
+    <button onclick='update()' width='200' height='30'>Start Game</button>
+  </div>
+
+    <h7>PacMan Exercise</h7>
+    <p class="titlePac">Generate PacMans that bounce around screen</p>
+
     
-    <!-- End Example Code -->
-
-    <!-- <h1>Headline</h1>
-      <p>example text</p> -->
-
-
-  
-<!-- bottom icons -->
-
-<h2>MBTA BUS TRACKER</h2> 
-  <!-- <div class="bg-text"></div> -->
   <nav>
-    <div class="logo">:)</div>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="2projects.html">Projects</a></li>
@@ -77,10 +52,11 @@
         <li><a href="4contact.html">Contact </a></li>
       </ul>
   </nav>
-    <script src="pacmen.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="http://maps.google.com/maps/api/js?key=AIzaSyCkuIwALu-L4MjoP1MfF5jnF1ofjWqvtqs"></script>
     <script src="eyes.js"></script>
+    <script src="pacmen.js"></script>  
     <script src="mapanimation.js"></script> 
   </body>
 </html>

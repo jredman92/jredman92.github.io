@@ -1,17 +1,41 @@
-/* *
-{
+body {
+    height: 100vh;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: monospace;
-} */
-/* section {
-    display: flex;
+    display: cover;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    transform-style: preserve-3d;  
+  }
+
+  .home {
+    overflow: hidden;
+  }
+
+  .about {
+    overflow: hidden;
+  }
+
+  .contact {
+    overflow: hidden;
+  }
+  
+  /* .projects {
+    background-image: url(space.png);
+    background-repeat: repeat;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
 } */
+
+/* Background moves with mouse  */
+
+.module {
+    width: 100%;
+    height: 3000px;
+    background-image: url(space.png);
+  }
+
+/* Spinning Earth  */
+
 .earth {
     z-index: 0;
     position: absolute;
@@ -86,11 +110,13 @@
     }
 }
 
+/* Walking man  */
+
 .animation {
     position: relative;
     z-index: 1;
     left: 894px;
-    top: 438px;
+    top: -2563px;
     width: 78.333333333px;
     height: 126px;
     background-image: url(https://38.media.tumblr.com/tumblr_mb4zsyUYCT1rvuv0d.png);
@@ -104,28 +130,6 @@
     100% {
         background-position: -500px;
     }   
-}
-
-
-
-
-
-.bg-text {
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.4);
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border: 3px solid #ffffff;
-    position: absolute;
-    top: 5%;
-    left: 51%;
-    transform: translate(-50%, -46%);
-    z-index: 2;
-    width: 54%;
-    height: 9%;
-    padding: 0px;
-    text-align: center;
 }
 
 /* Bus tracker title - Page 2  */
@@ -159,28 +163,16 @@ h3 {
     text-align: center;
     color: white;
     -webkit-text-stroke: 1px #23430C;
-    text-shadow: -7px 5px 7px #23430c, 0px 0px 0px #23430c, 0px 0px 0 #23430c, 0px 0px 0 #23430c;
+    text-shadow: -3px 3px 7px #79e52b, 0px 0px 0px #23430c, 0px 0px 0 #23430c, 0px 0px 0 #23430c;
     display: block;
     font-family: monospace;
     font-size: 5em;
-    margin-top: 172px;
+    margin-top: -2826px;
     margin-left: 43px;
     font-weight: bold;
 }
 
-p.text3 {
-    text-align: justify;
-    color: white;
-    -webkit-text-stroke: 1px #23430C;
-    text-shadow: -7px 5px 7px #23430c, 0px 0px 0px #23430c, 0px 0px 0 #23430c, 0px 0px 0 #23430c;
-    display: block;
-    font-family: monospace;
-    font-size: 30px;
-    margin-top: 91px;
-    margin-left: 740px;
-    margin-right: 106px;
-    font-weight: bold;
-}
+
 
 /* Image - Page 3  */
 
@@ -195,101 +187,94 @@ p.text3 {
     height: 418px;
 }
 
+/* Rectangle - Page 3 */
+
+.rectangle2 {
+    z-index: 0;
+    position: absolute;
+    border-radius: 25px;
+    top: 350px;
+    left: 685px;
+    border: 2px solid #73AD21;
+    background: black;
+    padding: 20px;
+    width: 1113px;
+    height: 406px;
+}
+
 /* Rectangle - Page 4 */
 
 .rectangle {
+    position: absolute;
+    border-radius: 25px;
+    top: 300px;
+    left: 458px;
+    border: 2px solid #73AD21;
+    background: black;
+    padding: 20px;
+    width: 871px;
+    height: 406px;
+}
+
+/* Text - Page 3 */
+
+p.text3 {
     position: relative;
-    z-index: 0;
-    left: 50%;
-    top: 52%;
-    transform: translate(-50%, -50%);
-    width: 837px;
-    height: 104px;
-    background: #eeacff;
-    border-radius: 0% 0%;
-    box-shadow: 2px 2px 20px 6px rgb(51 255 245);
+    text-align: justify;
+    color: white;
+    display: block;
+    font-family: monospace;
+    font-size: 20px;
+    margin-top: 105px;
+    margin-left: 706px;
+    margin-right: 148px;
+    font-weight: bold;
 }
 
 /* Text - Page 4 */
 
 p.text4 {
-    position: relative;
+    position: absolute;
+    top: 15px;
+    left: 26px;
     text-indent: 30px;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     font-size: 25px;
     margin: 17% 28% 0% 28%;
-    color: rgb(0, 0, 0);
-    box-shadow: 2px 3px 9px 3px rgb(255 255 255);
+    color: rgb(248, 241, 241);
 }
 
-/* Slide labels  */
+/* Github text - Page 3 */
 
-h5 {
-    text-align: center;
+p.text5 {
+    position: absolute;
+    top: 468px;
+    left: 651px;
     color: white;
-    margin-bottom: -100px;
+    font-size: 30px;
 }
 
-
-
-/* #hi {
+p.text6 {
     position: absolute;
-    z-index: 0;
-    top: 168px;
-    bottom: 1px;
-    left: 470px;
-    right: 0;
-    width: 353px;
-    height: 324px;
-} */
-
-/* #jaymie {
-    position: absolute;
-    z-index: 0;
-    top: 150px;
-    bottom: 1px;
-    left: 1044px;
-    right: 0;
-    width: 715px;
-    height: 323px;
-} */
-
-
-
-
-
-
-
-/* First slide label on map page */
-
-
-
-body {
-    background-image: url("space.png");
-    margin: 0;
-    padding: 0;
-    min-height: 100%;
-    /* overflow: hidden; */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+    top: 468px;
+    left: 978px;
+    color: white;
+    font-size: 30px;
 }
-
-
 
 /* Nav Bar  */
 
 nav {
+    z-index: 2;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100px;
     padding: 0px 0px;
-    /* box-sizing: border-box;
-    background: rgba(0,0,0,0.6); */
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.6);
 }
 
 nav ul {
@@ -315,90 +300,28 @@ nav ul li a:hover {
     border-radius: 6px;
 }
 
-/* Map  */
-
-#map {
-    z-index: 20;
-    width: 1041px;
-    height: 759px;
-    left: 98px;
-    top: 19px;
-    position: absolute;
-    border: 20px;
-    border-color: #000;
-    outline: 20px;
-    outline-color: #000;
-}
-
-.carousel-indicators {
-    z-index: 1;
-    width: 1000px;
-    height: 1000px;
-    left: 153px;
-    top: 906px;
-    position: relative;
-    border: 20px;
-    border-color: #000;
-    outline: 20px;
-    outline-color: #000;
-}
-
-.carousel-control-next, .carousel-control-prev {
-    position: absolute;
-    top: 77px;
-    bottom: 0;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 15%;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-    background: 0 0;
-    border: 0;
-    opacity: .5;
-    transition: opacity .15s ease;
-}
-
-/* #map-container { 
+#map-container { 
     position: relative;
     top: 100px;
     left: 100px;
     height: 100%; 
     width: 100%;
     overflow: visible;
-} */
-
+}
 
 .carousel-inner {
     z-index: -1;
     width: 1233px;
-    height: 915px;
+    height: 861px;
     left: 331px;
-    top: 91px;
+    top: 58px;
     position: relative;
     border: 20px;
     color: #fff;
     border-color: #000;
     outline: 20px;
     outline-color: #000;
-    overflow: visible;
-}
 
-
-/* Map Border */
-
-.box {
-    position: relative;
-    z-index: 2;
-    left: 618px;
-    top: -400px;
-    transform: translate(-50%, -50%);
-    width: 1056px;
-    height: 774px;
-    background: #000000;
-    border-radius: 0% 0%;
 }
 
 /* Eye Exercise - Page 2 */
@@ -406,7 +329,8 @@ nav ul li a:hover {
 .eyes {
     z-index: 2;
     position: absolute;
-    top: 27%;
+    top: 1451px;
+    left: -17px;
     transform: translateY(-50%);
     width: 100%;
     text-align: center;
@@ -433,21 +357,125 @@ nav ul li a:hover {
     border-radius: 50%;
   }
 
-  .square {
-    position: relative;
+/* Map  */
+
+#map {
     z-index: 1;
-    left: 618px;
-    top: -400px;
+    width: 1041px;
+    height: 759px;
+    left: 425px;
+    top: 220px;
+    position: absolute;
+    border: 20px;
+    border-color: #000;
+    outline: 20px;
+    outline-color: #000;
+}
+
+/* Map Border */
+
+.box {
+    position: relative;
+    z-index: 0;
+    left: 944px;
+    top: -2507px;
     transform: translate(-50%, -50%);
     width: 1056px;
     height: 774px;
-    background: #006f9b;
+    background: #724297;
     border-radius: 0% 0%;
+}
+
+  .square {
+    position: relative;
+    z-index: 1;
+    left: 945px;
+    top: -2446px;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    background: #00bd94;
+    border-radius: 50%;
   }
 
-  .button {
-    margin-left: 50px;
+ /* Slide labels  */
+
+h4 {
+    position: relative;
+    text-align: center;
+    font-size: 3em;
+    top: -2906px;
+    color: white;
+    -webkit-text-stroke: 1px #23430C;
+    text-shadow: -7px 5px 7px #23430c, 0px 0px 0px #23430c, 0px 0px 0 #23430c, 0px 0px 0 #23430c;
+    display: block;
+    font-weight: bold;
+}
+h6 {
+    position: relative;
+    text-align: center;
+    font-size: 3em;
+    top: -2873px;
+    color: white;
+    -webkit-text-stroke: 1px #23430C;
+    text-shadow: -7px 5px 7px #23430c, 0px 0px 0px #23430c, 0px 0px 0 #23430c, 0px 0px 0 #23430c;
+    display: block;
+    font-weight: bold;
+}
+h7 {
+    position: relative;
+    text-align: center;
+    font-size: 3em;
+    top: -2816px;
+    color: white;
+    -webkit-text-stroke: 1px #23430C;
+    text-shadow: -7px 5px 7px #23430c, 0px 0px 0px #23430c, 0px 0px 0 #23430c, 0px 0px 0 #23430c;
+    display: block;
+    font-weight: bold;
+}
+
+.titleBus {
+    color: white;
+    position: relative;
+    text-align: center;
+    top: -2907px;
+}
+.titleEye {
+    color: white;
+    position: relative;
+    text-align: center;
+    top: -2875px;
+}
+.titlePac {
+    color: white;
+    position: relative;
+    text-align: center;
+    top: -2808px;
+}
+  #game {
+    position: absolute;
+    top: 2115px;
+    left: 0px;
   }
+
+  /* Github link */
+
+#github {
+    position: absolute;
+    top: 532px;
+    left: 649px;
+    height: 100px;
+}
+
+#linkedIn {
+    position: absolute;
+    top: 532px;
+    left: 982px;
+    height: 100px; 
+}
+
+
+
   
 
 
