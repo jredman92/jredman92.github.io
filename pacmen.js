@@ -21,7 +21,7 @@ makePac = () => {
   let game = document.getElementById('game');
   let newimg = document.createElement('img');
   newimg.style.position = 'absolute';
-  newimg.src = './otherimgs/pacman1.png';
+  newimg.src = './otherimgs/PacMan1.png';
   newimg.width = 100;
   newimg.style.left = position.x;
   newimg.style.top = position.y;
