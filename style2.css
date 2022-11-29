@@ -509,6 +509,24 @@ h7 {
     width: 613px;
 }
 
+/* button on contacts page  */
+
+#liveAlertPlaceholder {
+    position: absolute;
+    top: 409px;
+    left: 1422px;
+    height: 582px;
+    width: 386px;
+}
+
+#liveAlertBtn {
+    position: absolute;
+    top: 333px;
+    left: 1424px;
+    height: 67px;
+    width: 382px;
+}
+
 
 
   
