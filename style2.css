@@ -167,7 +167,7 @@ h3 {
     display: block;
     font-family: monospace;
     font-size: 5em;
-    margin-top: -3337px;
+    margin-top: -3412px;
     margin-left: 43px;
     font-weight: bold;
 }
@@ -179,12 +179,12 @@ h3 {
 #about {
     position: absolute;
     z-index: 0;
-    top: 351px;
+    top: 218px;
     bottom: 1px;
-    left: 153px;
+    left: 27px;
     right: 0;
-    width: 438px;
-    height: 418px;
+    width: 627px;
+    height: 667px;
 }
 
 /* Rectangle - Page 3 */
@@ -193,13 +193,13 @@ h3 {
     z-index: 0;
     position: absolute;
     border-radius: 25px;
-    top: 350px;
+    top: 556px;
     left: 685px;
     border: 2px solid #73AD21;
     background: black;
     padding: 20px;
     width: 1113px;
-    height: 406px;
+    height: 306px;
 }
 
 /* Rectangle - Page 4 */
@@ -225,7 +225,7 @@ p.text3 {
     display: block;
     font-family: monospace;
     font-size: 20px;
-    margin-top: 167px;
+    margin-top: 397px;
     margin-left: 706px;
     margin-right: 148px;
     font-weight: bold;
@@ -474,6 +474,11 @@ h7 {
     height: 100px; 
 }
 
+.youtube {
+    position: relative;
+    top: -610px;
+    left: 920px;
+}
 /* grid  */
 
 /* .row {
@@ -486,6 +491,7 @@ h7 {
     top: 300px;
     left: 300px;
 } */
+
 
 
 
