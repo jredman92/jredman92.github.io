@@ -452,7 +452,7 @@ h7 {
     left: 0px;
   }
 
-  /* Github link */
+  /* Github/linkedin/youtube link */
 
 #github {
     position: absolute;
@@ -482,7 +482,7 @@ h7 {
     text-align: justify;
     z-index: 5;
     position: absolute;
-    top: 299px;
+    top: 404px;
     left: 1519px;
     width: 324px;
 }
@@ -493,7 +493,7 @@ h7 {
     text-align: justify;
     z-index: 5;
     position: absolute;
-    top: 1351px;
+    top: 1452px;
     left: 1458px;
     width: 324px;
 }
@@ -504,7 +504,7 @@ h7 {
     text-align: justify;
     z-index: 5;
     position: absolute;
-    top: 1984px;
+    top: 2021px;
     left: 1224px;
     width: 613px;
 }
