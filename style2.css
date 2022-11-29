@@ -18,13 +18,7 @@ body {
     overflow: hidden;
   }
   
-  /* .projects {
-    background-image: url(space.png);
-    background-repeat: repeat;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
-} */
+
 
 /* Background moves with mouse  */
 
@@ -479,19 +473,41 @@ h7 {
     top: -610px;
     left: 920px;
 }
+
 /* grid  */
 
-/* .row {
-    position: relative;
-    top: 300px;
-    left: 300px;
+.g-col-4 {
+    color: white;
+    font-size: 19px;
+    text-align: justify;
+    z-index: 5;
+    position: absolute;
+    top: 299px;
+    left: 1519px;
+    width: 324px;
 }
-.col {
-    position: relative;
-    top: 300px;
-    left: 300px;
-} */
 
+.g-col-6 {
+    color: white;
+    font-size: 19px;
+    text-align: justify;
+    z-index: 5;
+    position: absolute;
+    top: 1351px;
+    left: 1458px;
+    width: 324px;
+}
+
+.g-col-8 {
+    color: white;
+    font-size: 19px;
+    text-align: justify;
+    z-index: 5;
+    position: absolute;
+    top: 1984px;
+    left: 1224px;
+    width: 613px;
+}
 
 
 
