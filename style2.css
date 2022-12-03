@@ -126,7 +126,7 @@ body {
     }   
 }
 
-/* Bus tracker title - Page 2  */
+/* Text on home page  */
 
 h1 {
     text-align: right;
@@ -136,6 +136,17 @@ h1 {
     position: absolute;
     top: 141px;
     right: 75px;
+}
+
+h8 {
+    text-align: right;
+    color: white;
+    font-family: 'Rubik Glitch', cursive;
+    font-size: 6em;
+    position: absolute;
+    top: 235px;
+    right: 75px;
+    animation-delay: 1s;
 }
 
 h2 {
